@@ -1,0 +1,43 @@
+<!Doctype html>
+<html>
+    <head><title>location</title></head>
+ <body >
+ <p>Click on the button to see your location</p>
+ <button onclick="getLocation()">Track Location</button>
+ <P id="demo"></P> 
+ <script>
+    var x=document.getElementById("demo") 
+    function getLocation(){
+        alert("i want to know your location")
+     if(navigator.geolocation){
+    navigator.geolocation.getCurrentPosition(showPosition,showError);     
+     }  
+     else{
+     x.innerHTML="Geolocation is not supported by this browser";    
+     } 
+    }
+    function showPosition(position){
+x.innerHTML="Latitude: "+ position.coords.latitude+"<br> Longitude: "+position.coords.longitude;
+    }
+    function showError(error){
+     switch(error.code) {
+    case error.PERMISION_DENIED:
+    x.innerHTML="You have denied request"  
+    break;
+    case error.POSITION_UNAVAILABLE:
+    x.innerHTML=" positionNot available" 
+    break;
+    case error.TIMEOUT:
+    x.innerHTML="OOPS TIMEOUT"
+    break;
+    case error .UNKOWN_ERROR:
+x.innerHTML="unkown errror"
+break;
+     }  
+    }
+ </script>   
+ <center>
+ <img src="dummy.png">
+ </center>
+ </body>   
+</html>

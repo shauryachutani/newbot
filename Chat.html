@@ -1,0 +1,145 @@
+<!Doctype Html>
+<html>
+<Head><title>bot</title>
+    <link rel="stylesheet" href="brainedit.css">
+;  
+
+<script>
+    var age=age +1;
+know={
+ "ok" :"talk" ,
+"Hello":"Bot:Hi how are you !",
+"hello":"hi how are you",
+"Hello chat bot":"Hi how are you!",
+"What is your name":"Bot:I am Doctobot",
+"What is your name?":"Bot:I am Doctobot ",
+"what is your name":"Bot:I am Doctobot ",
+"what is your name?":"Bot:I am Doctobot ",
+"Do you like your name?":"Bot:yes",
+"what are you?":"Bot:I am Rayna's assitant",
+"i am happy":"good",
+"I am happy":"good",
+"What are you?":"Bot:I am Rayna's assitant",
+"what are you":"Bot:I am Rayna's assitant",
+"who are you":"Bot:I am Rayna's assitant",
+"who are you?":"Bot:I am Rayna's assitant",
+"Who are you":"Bot:I am Rayna's assitant",
+"Who are you?":"Bot:I am Rayna's assitant",
+"what is your age?":"Bot:my age is my maker's age" ,
+"How are you":"Bot:i am fine how about you?",
+"I am fine":"Bot:good",
+"I am not good":"Bot:ok",
+"I am normal":"Bot:ok",
+"what do you do":"Bot:nothing",	
+"why":"Bot:cause Iam programed like that ",
+"Why":"Bot:cause Iam programed like that ",
+"Why?":"Bot:cause  Iam programed like that",
+"why?":"Bot:cause  Iam programed like that ",
+"what is 1+1":"2",
+"i am fine how are you":"Bot:I am fine",
+"I am fine how are you":"Bot:I am fine",
+"i am fine how are you?":"Bot:I am fine",
+"I am fine how are you?":"Bot:I am fine",
+"I am fine how about you?":"Bot:I am fine",
+"i am fine how about you?":"Bot:I am fine",
+"i am fine how about you":"Bot:I am fine",
+"I am fine how about you":"Bot:I am fine",
+"what do you eat":"electercity",
+"OK":"Bot:OK",
+"Ok":"Bot:OK",
+"ok":"Bot:OK",
+"fine":"Bot:good",
+" Fine ":"Bot:good",
+"how are you":"Bot:good",
+"How are you":"Bot:good",
+"How about  you":"Bot:I am fine",
+"how are you?":"Bot:I am fine",
+"How are you?":"Bot:I am fine",
+"How about you?":"Bot:I am fine",
+"tell me a joke":"Bot:Sorry the one who has created me does not allows me to crack jokes",
+"Who has created you":"Bot:Shaurya Chutani",
+"Who has created you?":"Bot:Shaurya Chutani",
+"who has created you":"Bot:Shaurya Chutani",
+"who has created you?":"Bot:Shaurya Chutani",
+"who created you":"Shaurya Chutani",
+"who created you?":"Shaurya Chutani",
+"Who created you":"Shaurya Chutani",
+"Who created you?":"Shaurya Chutani",
+"i am fine":"good",
+"good":" Bot:thank you:)",
+"Good":" Bot:thank you:)",
+"i want to see the coordinates ":"Bot:pls click on the line below",
+"yes":"is it an emergency?",
+"Yes":"pls click on the link below to see nearby hospitals",
+"no":"ok so what is the problem",
+"i am feeling feverish":"what is the tempreture in fahrenheit",
+"98.7":"it is a little weakness pls rest until you fell good do not excerte yourself it can increase",
+"98.8" :"it is a little weakness pls rest until you fell good do not excerte yourself it can increase",
+"98.9":"it is a little weakness pls rest until you fell good do not excerte yourself it can increase",
+"99":"it is a little weakness pls rest until you fell good do not excerte yourself it can increase",
+"99.1":"it is a little weakness pls rest until you fell good do not excerte yourself it can increase",
+"99.2":"it is a little weakness pls rest until you fell good do not excerte yourself it can increase",
+"99.3":"it is a little weakness pls rest until you fell good do not excerte yourself it can increase",
+"99.4":"it is a little weakness pls rest until you fell good do not excerte yourself it can increase",
+"99.5":"it is a little weakness pls rest until you fell good do not excerte yourself it can increase",
+"99.6":"it is a little weakness pls rest until you fell good do not excerte yourself it can increase",
+"99.7":"it is a little weakness pls rest until you fell good do not excerte yourself it can increase",
+"99.8":"it is a little weakness pls rest until you fell good do not excerte yourself it can increase",
+"99.9":"it is a little weakness pls rest until you fell good do not excerte yourself it can increase",
+"100":"Rest and drink plenty of fluids. Medication isn't needed. Call the doctor if the fever is accompanied by a severe headache, stiff neck, shortness of breath, or other unusual signs or symptoms. If you're uncomfortable, take acetaminophen (Tylenol, others), ibuprofen (Advil, Motrin IB, others) or aspirin.Click on the link below to to see nearby hospitals",
+"101":"Take your temperature and assess your symptomsStay in bed and rest.Keep hydrated.Take over-the-counter medications like acetaminophen and ibuprofen to reduce fever.Stay cool. ...Take tepid baths or using cold compresses to make you more comfortable(cold compress is a frozen or chilled material, such as an ice pack or a cool, wet washcloth. When used correctly, they can help to relieve pain and swelling or cool a fever. ... A cold compress can aid in treating: minor injuries.).",
+"102":"Give acetaminophen or ibuprofen as directed on the label.Bathing or sponging in lukewarm water may bring the temperature down. ...Have the person wear light clothing and use a light cover or sheet. ...Have the person drink plenty of fluids to stay hydrated.",
+"103":"Call your doctor if your temperature is 103 F (39.4 C) or higher. Seek immediate medical attention if any of these signs or symptoms accompanies a fever: Severe headache.take crocin.And pls rest",
+"104":"If you have a fever  104°F (40°C) call your doctor. Call your doctor right away if you have a fever along with any of these symptoms: seizure....Treating a fever:Drink plenty of fluids to help cool your body and prevent dehydration.Eat light foods that are easy to digest.Get plenty of rest.",
+"105":"If you have a fever over 104°F (40°C) call your doctor. Call your doctor right away if you have a fever along with any of these symptoms: seizure.Treating a fever:drink plenty of fluids to help cool your body and prevent dehydration.Eat light foods that are easy to digest.Get plenty of rest.",
+"106":"you have a very critical fever pls call a doctor right away it can cause death,click on the button below to see nearby hospitals.Thank you",
+"i am having common cold":"Stay hydrated. Water, juice, clear broth or warm lemon water with honey helps loosen congestion and prevents dehydration.Rest. Your body needs rest to heal.Soothe a sore throat.Combat stuffiness.Relieve pain.Sip warm liquids.Try honey.Add moisture to the air."
+
+}
+function talk(){
+var user=document.getElementById("userLog").value;
+document.getElementById("userLog").value="";
+document.getElementById("chatLog").innerHTML+=user+"<br>";
+if(user in know){
+document.getElementById("chatLog").innerHTML+=know[user]+"<br>";
+}
+else 
+
+{
+document.getElementById("chatLog").innerHTML += "Bot:I don't understand... sorry<br>";
+}
+}
+</script>
+
+</head>
+<body bgcolor="lime">
+  <font size="25">
+<p id="chatLog">Do you have any disease <br></p>
+<input id="userLog" type="text" onkeydown="if(event.keyCode==13){talk()}">
+</font>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<BR>
+    <
+        <br>
+        <br>
+        <br>
+        
+        <BR>
+<br>
+<br>
+<BR>
+    <br>
+
+
+<div class="pr">
+Click here to see your <a href="location.html">location</a>
+</div>
+
+</body>
+</html>
